@@ -1,0 +1,13 @@
+# Never put worker data or passwords on GitHub
+memory/
+web_work/
+backup/
+reports/
+.streamlit/secrets.toml
+secrets.toml
+.env
+__pycache__/
+*.xlsx
+*.xlsm
+*.db
+*.csv
