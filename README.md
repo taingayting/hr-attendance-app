@@ -2,7 +2,7 @@
 
 I started in HR at a factory in Cambodia knowing nothing, and I had to finish a lot of work on time. Every day, workers fill in paper attendance sheets and scan their fingerprints. Someone must compare the two, worker by worker, and workers' pay depends on the result. So I built this app to help me do it.
 
-**Try it:** [live app link, added after deploy]
+**Try it:** https://hr-attendance-app-lxvsk26tyd4fqtfdmm28jp.streamlit.app/
 
 This public copy runs on **14 sample workers**. My real workers' data is private and is not in this repository. Worker IDs here start with `DMO-`.
 

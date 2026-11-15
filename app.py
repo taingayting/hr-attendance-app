@@ -3943,7 +3943,7 @@ PAGE_ICON = {"Daily work": "📅", "One person": "🧍", "History": "🗂️", "
              "Worker list": "📋", "Chinese workers": "🇨🇳", "Notes": "📝", "Notebook": "📓"}
 if "ui_loaded" not in st.session_state:                      # first time this browser tab opens: go back to where you stopped
     st.session_state["ui_loaded"] = True
-    _ui = UK.load_state()
+    _ui = {} if os.environ.get("HR_DEMO") else UK.load_state()    # the public demo: every visitor starts at Daily work
     if _ui.get("section") in ("Attendance", "HR"): st.session_state.setdefault("section", _ui["section"])
     if _ui.get("page_hr") in HR_PAGES: st.session_state.setdefault("page_hr", _ui["page_hr"])
     if _ui.get("page_att") in ATT_PAGES: st.session_state.setdefault("page_att", _ui["page_att"])
